@@ -4,11 +4,15 @@
   "description": "Project to a consultant company in Belem",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "author": "Arthur",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
   }
 }
